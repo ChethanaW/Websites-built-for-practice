@@ -1,0 +1,31 @@
+header {    padding: 1em;
+            color: #047f0a;
+            background-color: black;
+            /*clear: left;*/
+            text-align: center;
+        }
+
+.image {
+            position:absolute; 
+            TOP:170px; 
+            LEFT: 470px; 
+            WIDTH:700px; 
+            HEIGHT:500px;
+            
+        }
+
+.container{
+            position:absolute; 
+            TOP:300px; 
+            LEFT: 710px; 
+            WIDTH:100px; 
+            HEIGHT:250px;
+        }
+
+.button_style{
+            width: 45px;
+            height: 45px;
+            text-align: center;
+            border-radius: 5px;
+            background-color: darkcyan;
+        }

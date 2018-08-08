@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="Description" content = "Calculator">
+<title style="color: brown"> "CaLcUlAtOr cAlCuLaToR "</title>
+
+    <!--use of css styling width="800" height="500"  -->
+<!-- <link rel="Style_Sheet" type="text/css" href="index.css"> -->
+<style>
+header {    padding: 1em;
+            color: #047f0a;
+            background-color: black;
+            /*clear: left;*/
+            text-align: center;
+        }
+
+.image {
+            position:absolute; 
+            TOP:170px; 
+            LEFT: 470px; 
+            WIDTH:700px; 
+            HEIGHT:500px;
+            
+        }
+
+.container{
+            position:absolute; 
+            TOP:300px; 
+            LEFT: 710px; 
+            WIDTH:100px; 
+            HEIGHT:250px;
+        }
+
+.button_style{
+            width: 45px;
+            height: 45px;
+            text-align: center;
+            border-radius: 5px;
+            background-color: darkcyan;
+        }
+</style>
+    
+</head>
+<body >
+    <header>
+        <h1 > <b>CaLcUlAtOr cAlCuLaToR</b>  </h1>
+    </header>
+    
+    <?php
+    
+
+
+
+    ?>
+    <script>
+        
+    </script>
+    
+    <img  class= "image" src="backgroud_calc.jpg" alt="Calculator" onclick="window.location.reload()" />
+    <form class="container" name="calculator">
+        <table>
+            
+            <tr><input type="text" name="result_display" id="display" style="width: 190px; height: 60px; text-align: right; font-size: 40px " disabled >
+            </tr>
+            <tr><input type="textfield" name="result" id="result" style="width: 188px; height: 20px;"  >
+            </tr>
+            
+            <tr>
+                <td><input type="button" id= "7" value="7" onclick="calculator.result.value +=  '7'" class="button_style"></td>
+                <td><input type="button" id= "8" value="8" onclick="calculator.result.value +=  '8'" class="button_style"></td>
+                
+                <td><input type="button" id= "9" value="9" onclick="calculator.result.value +=  '9'" class="button_style"></td>
+                <td><input type="button" id= "multiply" value="X" onclick=" calculator.result.value +=  '*';" class="button_style"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id= "4" value="4" onclick="calculator.result.value +=  '4'" class="button_style"></td>
+                <td><input type="button" id= "5" value="5" onclick="calculator.result.value +=  '5'" class="button_style"></td>
+                
+                <td><input type="button" id= "6" value="6" onclick="calculator.result.value +=  '6'" class="button_style"></td>
+                <td><input type="button" id= "divide" value="/" onclick=" calculator.result.value +=  '/';" class="button_style" ></td>
+            </tr>
+            <tr>
+                <td><input type="button" id= "1" value="1" onclick="calculator.result.value +=  '1'" class="button_style"></td>
+                <td><input type="button" id= "2" value="2" onclick="calculator.result.value +=  '2'" class="button_style"></td>
+                
+                <td><input type="button" id= "3" value="3" onclick="calculator.result.value +=  '3'" class="button_style"></td>
+                <td><input type="button" id= "substract" value="-" onclick=" calculator.result.value +=  '-';" class="button_style" ></td>
+            </tr>
+            <tr>
+                <td><input type="button" id= "0" value="0" onclick="calculator.result.value +=  '0'" class="button_style"></td>
+                <td><input type="button" id= "dot" value="."  onclick="calculator.result.value +=  '.'" class="button_style"></td>
+                <td><input type="button" id= "equal" value="=" onclick="calculator.result_display.value = eval(calculator.result.value); calculator.result.value +=  '=';" class="button_style"></td>
+                <td><input type="button" id= "add" value="+" onclick="calculator.result.value +=  '+'" class="button_style"></td>
+            </tr>
+        
+        </table>
+        
+        
+        
+    </form>
+    
+    <p style="text-align: center">Click on the background below to refresh</p>
+    
+    
+    
+    
+    
+    
+    
+
+</body>
+</html>
